@@ -1,0 +1,15 @@
+{
+  "name": "frontend-developer-toolbox",
+  "version": "1.0.0",
+  "description": "A workshop on tools for frontend developers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcolm-kee/frontend-developer-toolbox.git"
+  },
+  "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malcolm-kee/frontend-developer-toolbox/issues"
+  },
+  "homepage": "https://github.com/malcolm-kee/frontend-developer-toolbox#readme"
+}
