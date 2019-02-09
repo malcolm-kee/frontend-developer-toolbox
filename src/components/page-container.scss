@@ -1,0 +1,11 @@
+@import './constants';
+
+.page-container {
+  &-content {
+    padding-top: $header-height-small;
+
+    @media screen and (min-width: $media-tablet) {
+      padding-top: $header-height;
+    }
+  }
+}

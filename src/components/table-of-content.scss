@@ -1,0 +1,48 @@
+@import './constants';
+
+.table-of-content {
+  padding: 3 * $spacing-unit 0;
+  background: $grey-200;
+
+  &--fixed {
+    position: relative;
+
+    @media screen and (min-width: $media-tablet) {
+      position: fixed;
+      right: 0;
+      height: 100%;
+      top: $header-height;
+    }
+  }
+
+  &-container {
+    max-width: 300px;
+    margin: 0px auto;
+  }
+  ol {
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    padding: 0 $spacing-unit;
+    margin-bottom: 0;
+    a {
+      display: block;
+      padding: $spacing-unit / 2 $spacing-unit * 2;
+      &:hover {
+        color: $primary-color-dark;
+      }
+    }
+  }
+
+  .toc-link {
+    color: #000;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+  }
+
+  .toc-link.toc-link--active {
+    color: $primary-color-dark;
+    border-left: 3px solid $primary-color-dark;
+  }
+}

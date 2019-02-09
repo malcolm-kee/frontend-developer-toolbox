@@ -1,13 +1,21 @@
 @import './constants';
 
 .header {
+  position: fixed;
+  top: 0;
   background: $primary-color;
   color: #fff;
   padding: $spacing-unit $spacing-unit * 2;
-  box-shadow: $box-shadow-8;
   width: 100%;
+  min-height: $header-height-small;
+  display: flex;
+  align-items: center;
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    min-height: $header-height;
   }
 }

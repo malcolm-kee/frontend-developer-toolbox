@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Header } from './header';
+import './page-container.scss';
 
 export const PageContainer = ({ children }) => (
   <StaticQuery
@@ -32,7 +33,7 @@ export const PageContainer = ({ children }) => (
           />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        {children}
+        <div className="page-container-content">{children}</div>
       </div>
     )}
   />
