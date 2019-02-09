@@ -1,0 +1,13 @@
+@import './constants';
+
+.header {
+  background: $primary-color;
+  color: #fff;
+  padding: $spacing-unit $spacing-unit * 2;
+  box-shadow: $box-shadow-8;
+  width: 100%;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

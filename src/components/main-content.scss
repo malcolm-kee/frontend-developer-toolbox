@@ -1,0 +1,7 @@
+@import './constants';
+
+.main-content {
+  margin: 0 auto;
+  padding: 0 $spacing-unit * 2;
+  max-width: $content-max-width;
+}
