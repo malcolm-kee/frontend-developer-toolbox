@@ -6,7 +6,7 @@ description: 'Using and customizing Visual Studio Code'
 
 # VS Code
 
-[Visual Studio Code](vs-code) (VS Code) is a editor built to suit the needs of web developers. We'll learn about how to use the features provided by it and customizing it to make our web development easier.
+[Visual Studio Code][vs-code] (VS Code) is a editor built to suit the needs of web developers. We'll learn about how to use the features provided by it and customizing it to make our web development easier.
 
 However, many features we learning here doesn't applies to VS Code only, but works with other editor as well (you may need to configure manually). So rest assured that what you'll learn today will help you in your coding exercise, even though you don't use VS Code.
 
