@@ -3,14 +3,14 @@ const path = require('path');
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((fulfill, reject) => {
-    const lessonTemplate = path.resolve(
-      __dirname,
-      'src',
-      'templates',
-      'lesson-template.jsx'
-    );
+  const lessonTemplate = path.resolve(
+    __dirname,
+    'src',
+    'templates',
+    'lesson-template.jsx'
+  );
 
+  return new Promise((fulfill, reject) => {
     return graphql(`
       {
         allMarkdownRemark(
@@ -36,20 +36,10 @@ exports.createPages = ({ graphql, actions }) => {
 
         const instructions = result.data.allMarkdownRemark.edges;
 
-        instructions.forEach((instruction, index) => {
-          const next =
-            index === instructions.length - 1
-              ? null
-              : instructions[index + 1].node;
-          const previous = index === 0 ? null : instructions[index - 1].node;
-
+        instructions.forEach(instruction => {
           createPage({
             path: instruction.node.frontmatter.path,
-            component: lessonTemplate,
-            context: {
-              previous,
-              next
-            }
+            component: lessonTemplate
           });
         });
 
