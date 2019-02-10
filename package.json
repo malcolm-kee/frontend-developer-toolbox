@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malcolm-kee/frontend-developer-toolbox.git"
+    "url": "https://github.com/malcolm-kee/frontend-developer-toolbox.git"
   },
   "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
   "license": "MIT",

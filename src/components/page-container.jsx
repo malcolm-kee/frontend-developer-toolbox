@@ -14,6 +14,7 @@ export const PageContainer = ({ children }) => (
             description
             author
             keywords
+            repositoryUrl
           }
         }
       }
@@ -32,7 +33,10 @@ export const PageContainer = ({ children }) => (
             content={data.site.siteMetadata.keywords.join()}
           />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          repoUrl={data.site.siteMetadata.repositoryUrl}
+        />
         <div className="page-container-content">{children}</div>
       </div>
     )}
