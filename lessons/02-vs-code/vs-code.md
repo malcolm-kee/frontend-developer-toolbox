@@ -32,12 +32,12 @@ To edit and preview a markdown file in VS Code:
 
 1. create a file that ends with `.md`, e.g. `my-note.md`.
 1. create some content with markdown.
-1. press `[Ctrl] + [Shift] + P`
+1. press `Ctrl+Shift+P`
 1. right click the preview file tab and press "Split Right", and then you can drag it to the right panel.
 
 ### Emmet
 
-- speed up repetitive typing with TAB
+- speed up repetitive typing with `Tab`
 - built into VS Code
 - plugins available for most editors
 - using CSS selectors to generate HTML
@@ -128,9 +128,31 @@ To edit and preview a markdown file in VS Code:
 
 ## Editing Document
 
+This section describes the tricks and tips that you would find useful when editing code in VS Code.
+
 ### Go To
 
+- You can open any file by its name when you type `Ctrl+P` (Quick Open).
+
+  ![After type Ctrl+P, type the file name to show the available files in your project](quick-open.png)
+
+- Hold `Ctrl` and press `Tab` to view a list of all files open in an editor group. To open one of these files, use `Tab` again to pick the file you want to navigate to, then release `Ctrl` to open it.
+
+- You can navigate symbols inside a file with `Ctrl+Shift+O` or `Ctrl+P` and type `@`.
+
+  ![Go to Symbol](go-to-symbol.png)
+
+- You can go to the definition of a symbol by pressing `F12` or with `Ctrl+Click`.
+
 ### Multi-Cursor & Line Manipulation
+
+- Holding `Alt` and click on a position create multiple cursors that you can type at the same time.
+
+> Tips: If you click wrongly, you can press `Ctrl+U` to undo last selection.
+
+- Use `Ctrl+D` to select next occurrence. Similar to `Alt+Click`, you can use `Ctrl+U` to skip specific occurrence.
+- Holding `Alt+Shift` while dragging allows you to create multi cursor across line.
+- All multi cursor selections above enable powerful refactoring or code transforming, because each of it has its own clipboard instance.
 
 ### Renaming
 
