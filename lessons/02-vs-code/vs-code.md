@@ -156,13 +156,27 @@ This section describes the tricks and tips that you would find useful when editi
 
 ### Renaming
 
-### Exercise
+- Level 1: Find and Replace
+- Level 2: Multi select (`Ctrl+D`) and change
+- Level 3: `F2` rename
 
-## Customizing VS Code
-
-### Themes
+When you use `F2` to rename, VS Code would actually try to analyze your code to find where the rename should be performed as well.
 
 ### Code Snippets
+
+If you have some code that you use very frequently but isn't included in emmet, you can configure your own, known as "User Snippet" in VS Code.
+
+Example:
+
+```json
+{
+  "Import lodash": {
+    "prefix": "iml",
+    "body": "import $1 from 'lodash/$1';",
+    "description": "import lodash module"
+  }
+}
+```
 
 ### Exercise
 
