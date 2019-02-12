@@ -31,6 +31,7 @@ const typography = new Typograph({
     },
     blockquote: {
       color: '#000000',
+      background: '#efefef',
       marginLeft: 0,
       marginRight: 0,
       paddingLeft: rhythm(1 / 2),
@@ -38,7 +39,7 @@ const typography = new Typograph({
       paddingTop: rhythm(1 / 2),
       paddingBottom: rhythm(1 / 2),
       borderLeftColor: '#8d8d8d',
-      borderLeftWidth: rhythm(1 / 3),
+      borderLeftWidth: rhythm(1 / 4),
       borderLeftStyle: 'solid'
     }
   })
