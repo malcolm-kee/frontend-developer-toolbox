@@ -105,7 +105,69 @@ git status
 git status -s
 ```
 
+To unstage a staged file:
+
+```bash
+git reset HEAD <file-name>
+```
+
 ### Branching
+
+When you create a git repo, by default you have one branch, and it is called `master`.
+
+However, if multiple people working on same files together, their changes may conflict each other, and making everyone's life difficult.
+
+Branching means you diverge from the main line of development and continue to do work without messing with that main line.
+
+To create a new branch
+
+```bash
+git branch testing
+```
+
+![Two branches](two-branches.png)
+
+However, we're still at `master` branch.
+
+![HEAD pointing to master](head-to-master.png)
+
+To switch to the new branch
+
+```bash
+git checkout testing
+```
+
+![HEAD pointing to testing](head-to-testing.png)
+
+Let's modify something and do another commit.
+
+![testing branch is now ahead of master branch](testing-branch-ahead.png)
+
+Switch back to `master` branch
+
+```bash
+git checkout master
+```
+
+![switch back to master branch](checkout-master.png)
+
+When you make another commit on master
+
+![master and testing branches diverge now](advance-master.png)
+
+You can merge changes of `testing` branch into `master` with:
+
+```bash
+git merge testing
+```
+
+Finally, you can delete a branch with
+
+```bash
+git branch -D testing
+```
+
+_Images in this section are adapted from [Pro Git](https://git-scm.com/book/en/v2)_
 
 ## Using GitHub
 
