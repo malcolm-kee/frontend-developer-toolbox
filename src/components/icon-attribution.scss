@@ -1,0 +1,10 @@
+@import './constants';
+
+.icon-attribution {
+  font-size: 0.8rem;
+  max-width: $content-max-width;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: right;
+  padding: 0 $spacing-unit * 2 $spacing-unit;
+}

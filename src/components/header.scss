@@ -17,6 +17,11 @@
     text-decoration: none;
   }
 
+  &-brand {
+    display: inline-flex;
+    align-items: center;
+  }
+
   @media screen and (min-width: $media-tablet) {
     min-height: $header-height;
   }

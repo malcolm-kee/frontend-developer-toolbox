@@ -9,3 +9,11 @@
     }
   }
 }
+
+.icon {
+  margin: 0 $spacing-unit;
+  &--big {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}

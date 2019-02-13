@@ -1,4 +1,9 @@
 # frontend-developer-toolbox
+
+<div align="center">
+    <img src="icons/icon.png" width="150" title="toolbox logo" alt="toolbox logo" />
+</div>
+
 A workshop/talks on tools for frontend developers
 
 - editor (featuring VS Code)

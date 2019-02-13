@@ -17,6 +17,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: path.resolve(__dirname, 'icons'),
+        name: 'icons'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: path.resolve(__dirname, 'lessons'),
         name: 'lessons'
       }
@@ -56,19 +63,19 @@ module.exports = {
     },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     name: 'Intro to ReactJS v2',
-    //     short_name: 'React Intro v2',
-    //     start_url: '/',
-    //     background_color: '#fdf6e3',
-    //     theme_color: '#61dafb',
-    //     display: 'standalone',
-    //     icon: 'src/images/react-logo.png',
-    //     legacy: true
-    //   }
-    // },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Web Developer Toolbox',
+        short_name: 'Webdev Tools',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#b71c1c',
+        display: 'standalone',
+        icon: 'icons/icon.png',
+        legacy: true
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify'
   ]
