@@ -12,6 +12,7 @@ module.exports = {
     bugUrl: packageJson.bugs.url
   },
   plugins: [
+    'gatsby-plugin-layout',
     'gatsby-plugin-sass',
     'gatsby-plugin-postcss',
     {

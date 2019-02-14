@@ -4,4 +4,26 @@
   margin: 0 auto;
   padding: 0 $spacing-unit * 2;
   max-width: $content-max-width;
+
+  &-container {
+    @media screen and (min-width: $media-tablet) {
+      margin-right: 200px;
+    }
+  }
+
+  a[href^='http'] {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid;
+    border-bottom-color: $grey-300;
+    background-color: transparent;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-property: border-bottom-color, background-color;
+  }
+
+  a[href^='http']:hover {
+    border-bottom-color: $primary-color-light;
+    background-color: $grey-200;
+  }
 }

@@ -38,11 +38,27 @@
   .toc-link {
     color: #000;
     text-decoration: none;
-    border-left: 3px solid transparent;
+    position: relative;
+    transition: color 300ms ease-in-out;
   }
 
   .toc-link.toc-link--active {
     color: $primary-color-dark;
-    border-left: 3px solid $primary-color-dark;
+  }
+
+  .toc-link::before {
+    content: ' ';
+    display: block;
+    background: $primary-color-dark;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 0;
+    transition: width 300ms ease-in-out;
+  }
+
+  .toc-link.toc-link--active::before {
+    width: $spacing-unit / 2;
   }
 }

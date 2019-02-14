@@ -1,9 +1,0 @@
-@import '../components/constants';
-
-.lesson-template {
-  &-content {
-    @media screen and (min-width: $media-tablet) {
-      margin-right: 200px;
-    }
-  }
-}

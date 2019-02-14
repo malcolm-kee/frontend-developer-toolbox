@@ -1,13 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { PageContainer } from '../components/page-container';
 import { MainContent } from '../components/main-content';
-import { TableOfContents } from '../components/table-of-content';
-import './lesson-template.scss';
 
 const LessonTemplate = ({ data }) => (
-  <PageContainer>
+  <>
     <Helmet>
       <title>{data.markdownRemark.frontmatter.title}</title>
       {data.markdownRemark.frontmatter.description && (
@@ -17,15 +14,10 @@ const LessonTemplate = ({ data }) => (
         />
       )}
     </Helmet>
-    <div className="lesson-template-content">
-      <MainContent>
-        <article
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-      </MainContent>
-    </div>
-    <TableOfContents fixed />
-  </PageContainer>
+    <MainContent>
+      <article dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+    </MainContent>
+  </>
 );
 
 export default LessonTemplate;

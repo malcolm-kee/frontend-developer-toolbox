@@ -1,10 +1,11 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Header } from './header';
+import { Header } from '../components/header';
+import { TableOfContents } from '../components/table-of-content';
 import './page-container.scss';
 
-export const PageContainer = ({ children }) => (
+const PageContainer = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteQuery {
@@ -38,7 +39,10 @@ export const PageContainer = ({ children }) => (
           repoUrl={data.site.siteMetadata.repositoryUrl}
         />
         <div className="page-container-content">{children}</div>
+        <TableOfContents fixed />
       </div>
     )}
   />
 );
+
+export default PageContainer;
