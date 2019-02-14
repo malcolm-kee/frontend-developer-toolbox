@@ -6,6 +6,8 @@ description: 'Use Google Chrome Developer Tools to edit and debug your web appli
 
 # Chrome DevTools
 
+![Google Chrome](google-chrome.png)
+
 [Chrome DevTools][chrome-devtools] is a set of web developer tools built directly into Google Chrome.
 
 - Browser Debugging Phase 1: View Source + alert
