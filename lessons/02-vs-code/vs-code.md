@@ -180,6 +180,9 @@ Example:
 
 ### Exercise
 
+1. Use multi-cursor to create an array of object with properties `name` and `age`, based on the data of the table [here](https://gist.github.com/malcolm-kee/d92e8b60ce1369eadc06b7e6f9a88b70#file-multi-cursor-html).
+1. Use VS Code rename to rename the function `add` to `totalUp` in this [javascript file](https://gist.github.com/malcolm-kee/d92e8b60ce1369eadc06b7e6f9a88b70#file-rename-function-js).
+
 > Credit: Emmet exercises adapted from [this gist](https://gist.github.com/cirops/4715058)
 
 [vs-code]: https://code.visualstudio.com/
