@@ -1,3 +1,5 @@
+> This repo is no longer maintained. It is migrated to [malcolmkee.com](https://malcolmkee.com/web-developer-toolbox).
+
 # frontend-developer-toolbox
 
 <div align="center">
